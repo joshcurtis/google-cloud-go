@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"time"
 
-	"cloud.google.com/go/internal/optional"
-	"cloud.google.com/go/internal/trace"
+	"github.com/joshcurtis/google-cloud-go/internal/optional"
+	"github.com/joshcurtis/google-cloud-go/internal/trace"
 	"google.golang.org/api/googleapi"
 	"google.golang.org/api/iterator"
 	raw "google.golang.org/api/storage/v1"

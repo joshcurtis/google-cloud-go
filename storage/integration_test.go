@@ -41,8 +41,8 @@ import (
 
 	"cloud.google.com/go/httpreplay"
 	"cloud.google.com/go/iam"
-	"cloud.google.com/go/internal/testutil"
-	"cloud.google.com/go/internal/uid"
+	"github.com/joshcurtis/google-cloud-go/internal/testutil"
+	"github.com/joshcurtis/google-cloud-go/internal/uid"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"golang.org/x/oauth2/google"

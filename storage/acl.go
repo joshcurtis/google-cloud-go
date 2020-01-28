@@ -19,7 +19,7 @@ import (
 	"net/http"
 	"reflect"
 
-	"cloud.google.com/go/internal/trace"
+	"github.com/joshcurtis/google-cloud-go/internal/trace"
 	"google.golang.org/api/googleapi"
 	raw "google.golang.org/api/storage/v1"
 )

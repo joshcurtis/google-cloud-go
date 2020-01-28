@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"cloud.google.com/go/internal/trace"
+	"github.com/joshcurtis/google-cloud-go/internal/trace"
 	raw "google.golang.org/api/storage/v1"
 )
 
