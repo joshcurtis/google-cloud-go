@@ -1176,6 +1176,7 @@ var attrToFieldMap = map[string]string{
 	"Deleted":                 "timeDeleted",
 	"Updated":                 "updated",
 	"Etag":                    "etag",
+	"Prefixes":                "prefixes",
 }
 
 // SetAttrSelection makes the query populate only specific attributes of
@@ -1185,7 +1186,7 @@ var attrToFieldMap = map[string]string{
 // ObjectAttr will remain at their default values. This is a performance
 // optimization; for more information, see
 // https://cloud.google.com/storage/docs/json_api/v1/how-tos/performance
-func (q *Query) SetAttrSelection(attrs []string) error {
+func (q *Query) SetAttrSelection2(fields [] string, attrs []string) error {
 	fieldSet := make(map[string]bool)
 
 	for _, attr := range attrs {
@@ -1208,9 +1209,17 @@ func (q *Query) SetAttrSelection(attrs []string) error {
 			b.WriteString(field)
 		}
 		b.WriteString(")")
+		for _, f := range fields {
+			b.WriteString(",")
+			b.WriteString(f)
+		}
 		q.fieldSelection = b.String()
 	}
 	return nil
+}
+
+func (q *Query) SetAttrSelection(attrs []string) error {
+	return q.SetAttrSelection2([]string{}, attrs)
 }
 
 // Conditions constrain methods to act on specific generations of
