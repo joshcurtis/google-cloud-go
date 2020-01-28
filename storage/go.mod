@@ -1,9 +1,9 @@
-module cloud.google.com/go/storage
+module github.com/joshcurtis/google-cloud-go/storage
 
 go 1.11
 
 require (
-	cloud.google.com/go v0.50.0
+	github.com/joshcurtis/google-cloud-go v0.50.2
 	cloud.google.com/go/bigquery v1.3.0 // indirect
 	cloud.google.com/go/pubsub v1.1.0 // indirect
 	github.com/golang/groupcache v0.0.0-20191227052852-215e87163ea7 // indirect
