@@ -1,4 +1,4 @@
-module cloud.google.com/go
+module github.com/joshcurtis/google-cloud-go
 
 go 1.11
 

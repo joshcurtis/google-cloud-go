@@ -34,7 +34,7 @@ import (
 	"time"
 
 	"cloud.google.com/go/iam"
-	"cloud.google.com/go/internal/testutil"
+	"github.com/joshcurtis/google-cloud-go/internal/testutil"
 	"google.golang.org/api/iterator"
 	"google.golang.org/api/option"
 	raw "google.golang.org/api/storage/v1"

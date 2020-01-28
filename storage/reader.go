@@ -28,7 +28,7 @@ import (
 	"strings"
 	"time"
 
-	"cloud.google.com/go/internal/trace"
+	"github.com/joshcurtis/google-cloud-go/internal/trace"
 	"google.golang.org/api/googleapi"
 )
 
